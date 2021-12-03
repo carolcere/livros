@@ -5,9 +5,5 @@ import br.com.tech4me.techLivro.model.Livro;
 
 public interface LivroRepository extends MongoRepository<Livro, String> {
 
-    Object findAll(Double codigo);
-
-    void deleteById(Double codigo);
-
     
 }
