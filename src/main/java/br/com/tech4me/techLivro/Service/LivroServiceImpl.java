@@ -31,14 +31,14 @@ public class LivroServiceImpl implements LivroService {
 
     @Override
     public void excluirLivro(Double codigo) {
-        repo.deleteById(codigo);
+        repo.delete(codigo);
         
     }
 
     @Override
-    public Livro atualizarLivro(Double codigo, Livro novoCodigo) {
+    public Livro atualizarLivro(Double codigo, Livro novoLivro) {
         novoCodigo.setCodigo(codigo);
-        return repo.save(novoCodigo);
+        return repo.save(novoLivro);
     }
 
   
